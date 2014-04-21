@@ -17,13 +17,13 @@ RSpec::Core::RakeTask.new(:spec)
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "ruby-box"
-  gem.homepage = "http://github.com/attachmentsme/ruby-box"
+  gem.name = "lti-ruby-box"
+  gem.homepage = "https://github.com/wbhumphrey/ruby-box"
   gem.license = "MIT"
   gem.summary = %Q{ruby gem for box.com 2.0 api}
   gem.description = %Q{ruby gem for box.com 2.0 api}
-  gem.email = "ben@attachments.me"
-  gem.authors = ["Attachments.me"]
+  gem.email = "brad@instructure.com"
+  gem.authors = ["Attachments.me", "wbhumphrey"]
   gem.files.exclude 'spec/*.test'
   # dependencies defined in Gemfile
 end
