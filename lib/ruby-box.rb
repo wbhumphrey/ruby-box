@@ -13,6 +13,7 @@ require 'ruby-box/event_response'
 require 'ruby-box/event'
 require 'ruby-box/web_link'
 require 'ruby-box/shared_link'
+require 'ruby-box/login_token'
 
 module RubyBox
   API_URL = 'https://api.box.com/2.0'

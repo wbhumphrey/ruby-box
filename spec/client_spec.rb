@@ -61,4 +61,15 @@ describe RubyBox::Client do
       result.should == test_folder
     end
   end
+
+  describe '#login_token' do
+    it 'creates a login token' do
+      client = RubyBox::Client.new(@session)
+      login_token = double()
+
+      RubyBox::LoginToken.should_receive(:new).with(@session, {}).and_return(login_token)
+      login_token.should_receive(:create).and_return(login_token)
+      client.login_token.should == login_token
+    end
+  end
 end

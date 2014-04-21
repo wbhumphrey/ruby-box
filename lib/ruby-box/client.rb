@@ -131,6 +131,10 @@ module RubyBox
       end
     end
 
+    def login_token
+      RubyBox::LoginToken.new(@session, {}).create
+    end
+
     private
 
     def upload_file_to_folder(local_path, folder, overwrite)
