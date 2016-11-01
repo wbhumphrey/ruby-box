@@ -4,7 +4,7 @@ module RubyBox
   class Session
 
     OAUTH2_URLS = {
-      :site => 'https://www.box.com',
+      :site => 'https://account.box.com',
       :authorize_url => "/api/oauth2/authorize",
       :token_url => "/api/oauth2/token"
     }
